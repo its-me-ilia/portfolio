@@ -1,0 +1,15 @@
+.header-container{
+    padding-bottom: 35px;
+}
+
+.header-container h1{
+    text-align: center;
+    padding-bottom: 15px
+}
+
+.header-border{
+    width: var(--header-border-width);
+    height: 3px;
+    background-color: black;
+    margin: auto;
+}

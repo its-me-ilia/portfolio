@@ -1,0 +1,72 @@
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(37,41,52);
+}
+
+.intro-container{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-wrapper{
+    display: inline-block;
+}
+
+.intro {
+    font-weight: 500;
+    text-align: center;
+}
+
+.devname{
+    color: rgb(227,27,109)
+}
+
+.work-redir{
+    margin: 10% 0
+}
+
+.redir-btn{
+    width: 230px;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    outline: none;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+.redir-btn:hover{
+    background-color: rgb(3, 162, 184);
+    border: 2px solid rgb(3,162,184)
+}
+.redir-arrow{
+    width:10%;
+    display: inline-block;
+    transition-duration: .3s;
+    transform: rotate(180deg);
+    height:10%
+}
+
+.redir-btn:hover .redir-arrow{
+    transform: rotate(-90deg);
+}
+.redir-arrow img{
+    width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .intro{
+        font-size: .7em;
+    }
+}

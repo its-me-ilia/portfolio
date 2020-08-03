@@ -1,0 +1,9 @@
+.about-container{
+    width: 100vw;
+}
+.info-border{
+    height: 1px;
+    margin: auto;
+    width: 50%;
+    background-color: rgb(222,226,230);
+}

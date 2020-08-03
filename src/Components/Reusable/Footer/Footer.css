@@ -1,0 +1,84 @@
+footer{
+    background: rgb(40,44,47);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+    padding: 4% 0;
+}
+
+.contact-info-item{
+    display: flex;
+    align-items: center;
+    padding: 2% 0
+}
+
+.footer-content p{
+    line-height: 2em;
+}
+
+.contact-info-item p{
+    padding-left: 1vw;
+}
+
+.contact-info-item-img{
+    width: 3.1vw;
+}
+
+.contact-info-item-img img{
+    width: 100%;
+    height: auto;
+}
+
+.resources-ul-container{
+    height: 90%;
+    padding-top: 20px;
+}
+
+.resources ul a{
+    color: rgb(0,131,255);
+}
+
+.resources ul a li{
+    list-style-type: none;
+}
+
+.heart{
+    font-size: 2rem;
+    vertical-align: middle;
+    margin: 0 4px;
+    color: red
+}
+
+.contact-up-part{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.outside-footer-madeby{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+    }
+    .resources-ul-container{
+        padding: 20px 0 0 0;
+    }
+    .contact-info-item-img{
+        width: 6.1vw;
+    }
+    .contact-info-item p{
+        padding-left: 4vw;
+    }
+    .outside-footer-madeby{
+        display: inline-block;
+        padding-top: 20px;
+    }    
+    .inside-footer-madeby{
+        display: none;
+    }
+}

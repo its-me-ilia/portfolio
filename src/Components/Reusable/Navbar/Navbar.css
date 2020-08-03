@@ -1,0 +1,227 @@
+nav{
+    position: absolute;
+    width: 100%;
+    position: fixed;
+    padding-top: 1.7%;
+    transition-duration: .2s;
+    display: flex;
+    justify-content: space-around;
+    z-index: 99;
+}
+
+.nav-scrolled{
+    padding-top: 0;
+}
+
+.nav-scrolled .nav-bg{
+    opacity: 1;
+}
+
+.nav-bg{
+    background-color: rgba(0,0,0,0.6);
+    width:100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+.ul-container{
+    padding: 15px 0
+}
+
+.ul-container ul a{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 0;
+    border: 2px solid transparent;
+    color: white;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.ul-container ul a:hover, .li-active{
+    border-bottom: 2px solid white !important;
+}
+
+.ul-container ul a li{
+    list-style-type: none;
+}
+
+.lang-container{
+    margin: auto 0;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+}
+
+.lang-txt p{
+    transition-duration: 3s;
+}
+
+.lang-container{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */ 
+    user-select: none; /* Standard */
+}
+
+.lang-container div p span{
+    vertical-align: middle;
+    display: inline-block;
+    transition-duration: .2s;
+    transform: rotate(180deg);
+}
+
+.lang-opts-container{
+    position: absolute;
+    width: 150px;
+    right: 17%;
+    margin-top: 22px;
+    transition-duration: .3s;
+}
+
+.lang-opts{
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.lang-opts div{
+    padding: 10px 0;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    transition-duration: .2s;
+}
+.lang-opts div:first-child{
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.lang-opts div:last-child{
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.lang-arrow-active{
+    transform: rotate(0deg) !important;
+}
+
+.active-lang{
+    background: rgb(0,131,255) !important;
+    opacity: 1;
+    color: white !important;
+}
+
+.visible{
+    animation: 0.31s popup;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.hamburger-menu{
+    display: none;
+    margin: 20px;
+}
+
+.hamburger-menu div{
+    height: 4px;
+    width: 35px;
+    margin: 16% 0;
+    background-color: white;
+}
+
+.hamburger-menu div{
+    transition-duration: .5s;
+}
+
+.hamburger-menu{
+    position: relative;
+    z-index: 100;
+    transition-duration: .5s;
+}
+
+.ham-clicked{
+    transition-duration: .5s;
+}
+
+.ham-clicked div{
+    height: 4px;
+}
+
+.ham-clicked div:nth-child(1){
+    transform: rotate(-45deg) translate(-6.5px, 6.5px);
+}
+
+.ham-clicked div:nth-child(3){
+    transform: rotate(45deg) translate(-6.5px, -6.9px);
+}
+
+.ham-clicked div:nth-child(2){
+    opacity: 0;
+}
+
+.ham-clicked .ul-container{
+    left: 0;
+}
+
+@media only screen and (max-width:768px){
+    .hamburger-menu{
+        display: block;
+        position: relative;
+        right: 10%;
+    }
+    .ham-clicked{
+        transform: translateX(70vw);
+    }
+    .ham-clicked div{
+        background-color: black;
+    }
+    .ul-container{
+        position: absolute;
+        z-index: 98;
+        top: 0;
+        left: 200vw;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: .3s;
+        font-size: 1.7em;
+        background-color: white;
+    }
+    .mobul-active{
+        left: 0;
+    }
+    .ul-container ul a{
+        display: block;
+        border: none !important;
+        color: black;
+    }
+
+    .ul-container ul a:hover{
+        border: none !important;
+    }
+
+    .ul-container ul{
+        display: inline-block;
+        padding-bottom: 80px;
+    }
+    .ul-container ul a{
+        text-align: center;
+    }
+    .li-active{
+        color: rgb(0,131,255) !important;
+    }
+}

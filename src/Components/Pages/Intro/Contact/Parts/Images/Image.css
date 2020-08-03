@@ -1,0 +1,16 @@
+.social-btn{
+    width: 4em;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social-btn img{
+    width: 100%;
+    height: auto;
+    transition-duration: .3s;
+}
+
+.social-btn img:hover{
+    transform: translateY(-10px);
+}

@@ -1,0 +1,35 @@
+.techs-wrapper{
+    padding: 5% 10px 0 10px !important;
+}
+
+.techs-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    padding: 0 !important;
+}
+
+.tech-header-container{
+    padding-bottom: 40px;
+}
+
+.tech-header-container h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.tech-header-border{
+    width: var(--header-border-width);
+    height: 3px;
+    background-color: black;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .techs-container{
+        grid-template-columns: 100%;
+    }
+    .techs-wrapper{
+        padding: 10% 10px 0 10px !important;
+    }
+}
